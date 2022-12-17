@@ -6,6 +6,6 @@ namespace mt {
 	bool flag2(int h, int g, int mas[100][100]);
 	void outPut_mas(int h, int g, int mas[100][100]);
 	void inPut_mas(int h, int g, int mas[100][100]);
-	int SumOfStrings(int h, int g, int mas[100][100], int sum[100]);
+	void SumOfStrings(int h, int g, int mas[100][100], int sum[100]);
 	void StringSort(int h, int g, int mas[100][100], int sum[100]);
 }

@@ -62,14 +62,13 @@ namespace mt {
 			}
 		}
 	}
-	int SumOfStrings(int h, int g, int mas[100][100], int sum[100]) {
-		if (flag1(g, h, mas) && flag2(h, g, mas)) {
-			for (int k = 0; k < h; k++) {
-				for (int i = 0; i < g; i++) {
-					sum[k] += abs(mas[k][i]);
+	void SumOfStrings(int h, int g, int mas[100][100], int sum[100]) {
+		for (int k = 0; k < h; k++) {
+			for (int i = 0; i < g; i++) {
+				sum[k] += abs(mas[k][i]);
 				}
 			}
-		}
+		
 	}
 	void StringSort(int h, int g, int mas[100][100], int sum[100]) {
 		for (int i = 0; i < h - 1; i++) {
