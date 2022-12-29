@@ -1,6 +1,6 @@
 ﻿#include <SFML/Graphics.hpp>
 #include <iostream>
-#include <Game.hpp>
+#include "Game.hpp"
 
 using namespace sf;
 float offsetX = 0, offsetY = 0;
