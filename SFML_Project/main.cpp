@@ -1,5 +1,6 @@
 ﻿#include <SFML/Graphics.hpp>
 #include <iostream>
+#include <Game.hpp>
 
 using namespace sf;
 float offsetX = 0, offsetY = 0;
@@ -27,7 +28,7 @@ class player {
 public:
 	float x, y;
 	FloatRect rect;
-	bool onGround = true;
+	bool onGround;
 	Sprite sprite;
 	float currentFrame;
 
@@ -133,7 +134,7 @@ int main()
 			}
 		}
 		player.update(time);
-		offsetX = player.rect.left - 600 / 2;
+		if (player.rect.left > 300) offsetX = player.rect.left - 600 / 2;
 		offsetY = player.rect.top - 600 / 2;
 
 		window.clear(Color::White);
